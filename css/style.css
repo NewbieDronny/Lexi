@@ -3,6 +3,14 @@ serif;
 font-family: 'Roboto',
 sans-serif;*/
 /*reset css*/
+@font-face {
+    font-family: Merriweather-Bold;
+    src: url(../fonts/Merriweather/Merriweather-Regular.ttf);
+	font-family: Noto_Sans_Display;
+    src: url(../fonts/Noto_Sans_Display/NotoSansDisplay-VariableFont_wdth\,wght.ttf);
+	font-family: Raleway-VariableFont_wght;
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+  }
 *,
 *::before,
 *::after {
@@ -10,8 +18,8 @@ sans-serif;*/
 }
 html,
 body {    
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
+    font-family: Merriweather-Regular;
+    font-weight: 400;
 	background-color:#ffdce3;	
 	background-image: linear-gradient(180deg, #ffdce3, #35aeff);
 }
@@ -64,7 +72,7 @@ ul {
 .container h2{
 	text-align: center;
 	font-size: 30px;
-	font-family: 'Roboto' sans-serif;
+	font-family: 'Merriweather-Bold';
 	font-weight: 700;
 }
 .container {
@@ -94,7 +102,7 @@ nav ul li a {
 }
 
 .logo {
-	font-family: 'Noto Serif';
+	font-family: 'NotoSansDisplay-VariableFont_wdth';
 	font-weight: 800;
 	font-size: 25px;
 	color: #505050;
@@ -115,10 +123,15 @@ nav ul li a {
 	font-size: 18px;
 	margin: 20px;
 }
+p {
+	font-family: Raleway-VariableFont_wght;
+	font-size: 16px;
+	font-weight: normal;
+}
 
 .swiper {
-width: auto;
-max-width: 1600px;
+	width: auto;
+	max-width: 1600px;
 }
 .swiper-slide {
 	padding: 30px 0 70px 0;
@@ -234,7 +247,6 @@ footer .wave#wave4 {
 	.main h2{
 		font-size: 20px;
 	}
-
 	.social h2 {
 		font-size: 18px;
 	}
@@ -252,7 +264,7 @@ footer .wave#wave4 {
 		font-size: 12px;
 	}
 	.swiper {
-		max-width: fit-content;
+		max-width: 300px;
 	}
 
 }

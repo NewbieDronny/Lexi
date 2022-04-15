@@ -4,7 +4,20 @@ swiper = new Swiper('.covers', {
     direction: 'horizontal',
     loop: true,
     //Количество слайдов для показа
-    slidesPerView: 3,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+        },
+        600: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        }
+    },
     autoplay: {
         delay: 4000
     },
@@ -27,6 +40,7 @@ swiper = new Swiper('.covers', {
         slideShadows: false,
     },
 
+
 });
 swiper = new Swiper('.mybutter', {
     // Optional parameters
@@ -34,7 +48,20 @@ swiper = new Swiper('.mybutter', {
     direction: 'horizontal',
     loop: true,
     //Количество слайдов для показа
-    slidesPerView: 3,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+        },
+        600: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        }
+    },
     autoplay: {
         delay: 5000
     },
@@ -57,6 +84,7 @@ swiper = new Swiper('.mybutter', {
         slideShadows: false,
     },
 
+
 });
 swiper = new Swiper('.dd', {
     // Optional parameters
@@ -64,7 +92,20 @@ swiper = new Swiper('.dd', {
     direction: 'horizontal',
     loop: true,
     //Количество слайдов для показа
-    slidesPerView: 3,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+        },
+        600: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        }
+    },
     autoplay: {
         delay: 7000
     },
@@ -86,5 +127,6 @@ swiper = new Swiper('.dd', {
         modifier: 1,
         slideShadows: false,
     },
+
 
 });
